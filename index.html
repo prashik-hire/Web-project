@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AutoRent</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Find Your Perfect Ride</h1>
+            <p>Reliable and affordable vehicle rentals for your next journey.</p>
+            <a href="#vehicles" class="btn">View Vehicles</a>
+        </section>
+
+        <section id="vehicles" class="vehicles-section">
+            <h2>Available Vehicles</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=400&q=80" alt="Economy Car">
+                    <h3>Swift Hatchback</h3>
+                    <p class="category">Economy</p>
+                    <p class="price">$30 / day</p>
+                    <button class="btn book-btn" data-vehicle="Swift Hatchback">Book Now</button>
+                </div>
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=400&q=80" alt="Sedan">
+                    <h3>Honda Civic</h3>
+                    <p class="category">Sedan</p>
+                    <p class="price">$50 / day</p>
+                    <button class="btn book-btn" data-vehicle="Honda Civic">Book Now</button>
+                </div>
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=400&q=80" alt="SUV">
+                    <h3>Toyota RAV4</h3>
+                    <p class="category">SUV</p>
+                    <p class="price">$70 / day</p>
+                    <button class="btn book-btn" data-vehicle="Toyota RAV4">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <h2>Book Your Vehicle</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="vehicleSelect">Select Vehicle</label>
+                    <select id="vehicleSelect" required>
+                        <option value="">-- Choose a Vehicle --</option>
+                        <option value="Swift Hatchback">Swift Hatchback</option>
+                        <option value="Honda Civic">Honda Civic</option>
+                        <option value="Toyota RAV4">Toyota RAV4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pickupDate">Pick-up Date</label>
+                    <input type="date" id="pickupDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="returnDate">Return Date</label>
+                    <input type="date" id="returnDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Email: support@autorent.com</p>
+            <p>Phone: +1 234 567 8900</p>
+            <p>Address: 123 Rental Street, Auto City</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vehicle Rental System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
